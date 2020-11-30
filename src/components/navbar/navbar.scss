@@ -1,0 +1,25 @@
+.navbar {
+  position: sticky;
+  top: 20px;
+  margin-top: 20px;
+  padding: 24px 10%;
+  z-index: 100;
+  color: white;
+  transition: all 450ms;
+
+  .navbar-component {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-container {
+      overflow: hidden;
+      display: flex;
+      justify-content: space-around;
+
+      li {
+        margin: 0 20px;
+      }
+    }
+  }
+}
