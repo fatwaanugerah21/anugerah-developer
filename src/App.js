@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import AboutUs from "./components/aboutUs/AboutUs";
 import LandingPage from "./components/landingPage/LandingPage";
 import Navbar from "./components/navbar/Navbar";
+import Plans from "./components/plans/Plans";
 import SocialMedia from "./components/socialMedia/SocialMedia";
-import "./app.css";
 
 function App() {
   const [yOffset, setYOffset] = useState(0);
@@ -15,12 +15,22 @@ function App() {
     return window.removeEventListener("scroll", windowScroll);
   }, []);
 
+  const bodyHeight = () => {
+    const allPage = document.querySelectorAll(".page");
+    let scrollHeight = 0;
+    allPage.forEach((page) => {
+      scrollHeight += page.scrollHeight;
+    });
+    return scrollHeight;
+  };
+
   return (
     <div className="app">
-      <Navbar pageYOffset={yOffset} />
-      <LandingPage />
-      <SocialMedia pageYOffset={yOffset} />
-      <AboutUs />
+      <Navbar pageYOffset={yOffset} className="page" />
+      <LandingPage className="page" />
+      <AboutUs className="page" />
+      <Plans className="page"/>
+      <SocialMedia pageYOffset={yOffset} bodyHeight={bodyHeight()} />
     </div>
   );
 }

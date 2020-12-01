@@ -1,24 +1,26 @@
 import React from "react";
 import "./LandingPage.min.css";
 
-function LandingPage() {
+function LandingPage({ className }) {
   return (
-    <div className="landing-page">
-      <div className="content">
-        <div className="background absolute-center full-size" />
-        <div className="cut-corner-top" />
-        <div className="title">
-          <h1>Anugerah Developer</h1>
+    <div className={className}>
+      <div className="landing-page">
+        <div className="content">
+          <div className="background absolute-center full-size" />
+          <div className="cut-corner-top" />
+          <div className="title">
+            <h1>Anugerah Developer</h1>
+          </div>
+
+          <p className="quote">
+            Give your business <span className="pressurer">Powerfull </span>
+            website
+          </p>
+
+          <a href="#about-us" className="to-next circle">
+            <img src="/images/next.svg" alt="mantap" />
+          </a>
         </div>
-
-        <p className="quote">
-          Give your business a <span className="pressurer">Powerfull </span>
-          website
-        </p>
-
-        <a href="#about-us" className="to-next circle">
-          <img src="/images/next.svg" alt="mantap" />
-        </a>
       </div>
     </div>
   );

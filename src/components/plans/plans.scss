@@ -1,0 +1,84 @@
+.plans {
+  position: relative;
+  padding: 7% 5%;
+  background-color: rgb(231, 41, 41);
+  z-index: 1000;
+  color: white;
+  overflow: hidden;
+
+  .item {
+    position: relative;
+    display: grid;
+    grid-column-gap: 5%;
+    text-align: justify;
+    grid-template-columns: 1fr 1.2fr;
+    vertical-align: middle;
+    width: 80%;
+    margin: 5% auto 7%;
+
+    * {
+      margin: auto;
+    }
+
+    .image {
+      max-width: 400px;
+      max-height: 400px;
+    }
+
+    .content {
+      * {
+        margin-bottom: 5%;
+      }
+
+      button {
+        padding: 15px 30px;
+        background-color: rgb(22, 24, 175);
+        color: white;
+        outline: none;
+        border-radius: 2px;
+        border: none;
+      }
+    }
+  }
+  .item:nth-child(even) {
+    grid-template-columns: 1.2fr 1fr;
+
+    .image {
+      order: 2;
+    }
+  }
+
+  .item:nth-child(last) {
+    margin-bottom: 0;
+  }
+  @media (max-width: 768px) {
+    .item {
+      grid-template-columns: 1fr;
+      grid-template-rows: 0.7fr;
+      text-align: start;
+      margin-bottom: 60px;
+
+      .image {
+        width: 350px;
+        height: 300px;
+        margin-bottom: 8px;
+      }
+
+      .content {
+        width: 350px;
+        h1 {
+          text-align: center;
+        }
+        button {
+          width: 100%;
+        }
+      }
+    }
+    .item:nth-child(even) {
+      grid-template-columns: 1fr;
+      .image {
+        order: 0;
+      }
+    }
+  }
+}

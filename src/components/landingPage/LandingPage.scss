@@ -3,6 +3,7 @@
   height: 90vh;
 
   .content {
+    text-align: center;
     width: 100vw;
     height: 100%;
     position: fixed;
@@ -19,13 +20,13 @@
       background-size: cover;
       background-repeat: no-repeat;
       z-index: -3;
-      filter: brightness(50%);
+      filter: brightness(40%);
     }
 
     h1 {
       width: fit-content;
       font-size: 40pt;
-      padding: 0 20px 10px;
+      padding: 70px 20px 10px;
       color: white;
       border-bottom: 4px solid white;
       font-family: "Times New Roman", Times, serif !important;
@@ -36,24 +37,32 @@
       color: white;
       font-size: 30pt;
       margin: 0 0 15vh;
+
+      span {
+        font-size: 34pt;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        text-transform: uppercase;
+      }
     }
+  }
+
+  .cut-corner-top {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-right: 120px solid rgb(22, 24, 175);
+    border-bottom: 80px solid transparent;
   }
 }
 
-.cut-corner-top {
-  position: absolute;
-  right: 0;
-  top: 0;
-  border-right: 120px solid rgb(22, 24, 175);
-  border-bottom: 80px solid transparent;
-}
-
-@media (max-height: 500px), (max-width: 560px) {
+@media (max-height: 500px) {
   .landing-page {
     margin-top: 27vh;
     height: 60vh;
+
     .title {
-      margin-top: 30vh;
+      margin-top: 30vh !important;
       h1 {
         font-size: 24pt;
       }
@@ -73,7 +82,7 @@
     margin-top: 30vh;
     height: 56vh;
     .title {
-      margin-top: 40vh;
+      margin: 20vh 0 -10vh !important;
       h1 {
         font-size: 24pt;
       }
@@ -83,6 +92,26 @@
     }
     .to-next {
       transform: scale(0.5);
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .landing-page {
+    height: 85vh;
+    .content {
+      .title {
+        h1 {
+          font-size: 23pt !important;
+        }
+      }
+      .quote {
+        font-size: 18pt;
+        padding: 0 40px;
+      }
+      .to-next {
+        transform: scale(0.5) translateY(-10vh);
+      }
     }
   }
 }

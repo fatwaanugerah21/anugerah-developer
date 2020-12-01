@@ -3,7 +3,7 @@ import { burgerMenu } from "./burger-menu";
 import "./navbar.min.css";
 
 const Navbar = ({ pageYOffset }) => {
-  const withBackground = pageYOffset >= 200 ? "dark-background stick-top" : "";
+  const withBackground = pageYOffset >= 200 ? " dark-background stick-top" : "";
   return (
     <div className={"navbar " + withBackground}>
       <div className="navbar-component row">
