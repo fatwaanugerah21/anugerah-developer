@@ -1,0 +1,27 @@
+.flow {
+  padding: 10%;
+  position: relative;
+  z-index: 1;
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5%;
+  }
+
+  .card {
+    background-color: white;
+    padding: 20px 40px;
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+    }
+  }
+}

@@ -1,0 +1,2 @@
+.flow{padding:10%;position:relative;z-index:1}.flow .container{display:-ms-grid;display:grid;-ms-grid-columns:1fr 1fr 1fr;grid-template-columns:1fr 1fr 1fr;grid-gap:5%}.flow .card{background-color:white;padding:20px 40px}.flow .card img{width:100px;height:100px}@media (max-width: 768px){.flow .container{-ms-grid-columns:1fr;grid-template-columns:1fr}}
+/*# sourceMappingURL=flow.min.css.map */
