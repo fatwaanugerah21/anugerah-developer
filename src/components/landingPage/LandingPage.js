@@ -3,7 +3,7 @@ import "./LandingPage.min.css";
 
 function LandingPage({ className }) {
   return (
-    <div className={className}>
+    <div className={className} id="home">
       <div className="landing-page">
         <div className="content">
           <div className="background absolute-center full-size" />

@@ -1,6 +1,7 @@
 import React from "react";
 import { burgerMenu } from "./burger-menu";
 import "./navbar.min.css";
+import { Logo } from "../../logo";
 
 const Navbar = ({ pageYOffset }) => {
   const withBackground = pageYOffset >= 200 ? " dark-background stick-top" : "";
@@ -8,6 +9,7 @@ const Navbar = ({ pageYOffset }) => {
     <div className={"navbar " + withBackground}>
       <div className="navbar-component row">
         <div className="burger-menu">{burgerMenu}</div>
+        <a href="#home">{Logo(false)}</a>
         <ul className="nav-container collapse-on-mobile">
           <li className="nav-item">COLLABORATE</li>
           <li className="nav-item">CALL</li>

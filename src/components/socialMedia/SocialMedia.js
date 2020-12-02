@@ -1,6 +1,7 @@
 import React from "react";
 import "./social-media.min.css";
 import { facebookIcon, githubIcon, instagramIcon } from "./icons";
+import { Logo } from "../../logo";
 
 const SocialMedia = ({ pageYOffset, bodyHeight }) => {
   const withBackground = pageYOffset >= 200 ? " dark-background" : "";
@@ -14,9 +15,8 @@ const SocialMedia = ({ pageYOffset, bodyHeight }) => {
   return (
     <div className={parentClass} id="mantap">
       <div className="creator">
-        <p>Created By</p>
-        <h3>Fatwa Anugerah Nasir</h3>
-        <img src="./logo.png" alt="" />
+        <p>Created By :</p>
+        <div>{Logo(true)}</div>
       </div>
       <ul className={"social-media-list " + withBackground}>
         <li className="social-media-item facebook">{facebookIcon()}</li>

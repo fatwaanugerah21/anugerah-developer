@@ -30,6 +30,10 @@
         margin-bottom: 5%;
       }
 
+      p {
+        width: 100%;
+      }
+
       button {
         padding: 15px 30px;
         background-color: rgb(22, 24, 175);
@@ -69,11 +73,54 @@
         h1 {
           text-align: center;
         }
+        p {
+          width: 100%;
+        }
         button {
           width: 100%;
         }
       }
     }
+
+    @media (max-width: 500px) {
+      .item {
+        transform: scale(0.8) translateX(-7%);
+        margin-bottom: -80px;
+      }
+
+      .item:last-child {
+        margin-bottom: 0;
+      }
+
+      .image {
+        width: 50px;
+        height: 150px;
+        margin-bottom: 8px;
+      }
+
+      .content {
+        width: 100%;
+      }
+
+      .item:nth-child(last) {
+        margin-bottom: 50px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .item {
+        transform: scale(0.8) translateX(-14%);
+        margin-bottom: -50px;
+      }
+    }
+
+    @media (max-width: 350px) {
+      .item {
+        transform: scale(0.7) translateX(-25%);
+        margin-bottom: -100px;
+      }
+    }
+
     .item:nth-child(even) {
       grid-template-columns: 1fr;
       .image {
