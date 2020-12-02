@@ -39,6 +39,9 @@ function Plans({ className }) {
 
   return (
     <div className={className}>
+      <div className="page-name-position">
+        <div className="page-name white-text">Our Plans</div>
+      </div>
       <div className="plans">{showedItems}</div>
     </div>
   );

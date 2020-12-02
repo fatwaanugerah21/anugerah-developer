@@ -4,7 +4,7 @@ import "./about-us.min.css";
 const AboutUs = ({ className }) => {
   return (
     <div className={className}>
-      <div className="about-us">
+      <div className="about-us" id="about-us">
         <div className="page-name-position">
           <div className="page-name">Tentang Kami</div>
         </div>

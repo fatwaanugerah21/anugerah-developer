@@ -38,7 +38,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-  
+
 .dark-background {
   background: black !important;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
@@ -61,11 +61,18 @@ code {
   transform: translate(-50%, -50%);
 }
 
+.page {
+  position: relative;
+}
+
 .page-name {
+  z-index: 2000;
   position: relative;
   left: 50px;
   top: 80px;
   width: fit-content;
+  max-width: 100%;
+  text-overflow: clip;
   font-style: italic;
   font-weight: 100;
   font-size: 15pt;
@@ -81,7 +88,27 @@ code {
   top: -3px;
 }
 
-@media (max-width: 720px) {
+.page-name-position {
+  position: absolute;
+  top: 0vh;
+  left: 10px;
+}
+
+.hide {
+  display: none !important;
+}
+
+.white-text {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .page-name-position {
+    position: absolute;
+    top: -8vh;
+    left: 10px;
+  }
+
   .collapse-on-mobile {
     display: none !important;
     width: 0 !important;

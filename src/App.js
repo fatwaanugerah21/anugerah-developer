@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import AboutUs from "./components/aboutUs/AboutUs";
+import Flow from "./components/flow/Flow";
 import LandingPage from "./components/landingPage/LandingPage";
 import Navbar from "./components/navbar/Navbar";
 import Plans from "./components/plans/Plans";
@@ -27,9 +28,10 @@ function App() {
   return (
     <div className="app">
       <Navbar pageYOffset={yOffset} className="page" />
-      <LandingPage className="page" />
+      <LandingPage className="page" pageYOffset={yOffset} />
       <AboutUs className="page" />
-      <Plans className="page"/>
+      <Flow className="page" />
+      <Plans className="page" />
       <SocialMedia pageYOffset={yOffset} bodyHeight={bodyHeight()} />
     </div>
   );
