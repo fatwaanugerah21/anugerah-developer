@@ -66,9 +66,12 @@ code {
   left: 50px;
   top: 80px;
   width: fit-content;
+  max-width: 100%;
+  text-overflow: clip;
   font-style: italic;
   font-weight: 100;
   font-size: 15pt;
+
 }
 
 .page-name::before {
