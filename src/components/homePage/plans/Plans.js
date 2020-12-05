@@ -38,7 +38,7 @@ function Plans({ className }) {
   });
 
   return (
-    <div className={className}>
+    <div className={className} id="plans">
       <div className="page-name-position">
         <div className="page-name white-text">Our Plans</div>
       </div>

@@ -16,12 +16,38 @@ const SocialMedia = ({ pageYOffset, bodyHeight }) => {
     <div className={parentClass} id="mantap">
       <div className="creator">
         <p>Created By :</p>
-        <div>{Logo(true)}</div>
+        <div>
+          <a href="#home">{Logo(true)}</a>
+        </div>
       </div>
       <ul className={"social-media-list " + withBackground}>
-        <li className="social-media-item facebook">{facebookIcon()}</li>
-        <li className="social-media-item instagram">{instagramIcon()}</li>
-        <li className="social-media-item github">{githubIcon()}</li>
+        <li className="social-media-item facebook">
+          <a
+            target="_blank"
+            rel="noreferrer noopener"
+            href="https://www.facebook.com/fatwa.anugerah.1/"
+          >
+            {facebookIcon()}
+          </a>
+        </li>
+        <li className="social-media-item instagram">
+          <a
+            href="https://www.instagram.com/anugerah_developer/"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            {instagramIcon()}
+          </a>
+        </li>
+        <li className="social-media-item github">
+          <a
+            href="https://github.com/fatwaanugerah21"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            {githubIcon()}
+          </a>
+        </li>
       </ul>
     </div>
   );

@@ -7,6 +7,10 @@
   color: white;
   transition: all 450ms;
 
+  button {
+    margin-left: 5px;
+  }
+
   .navbar-component {
     display: flex;
     justify-content: space-between;

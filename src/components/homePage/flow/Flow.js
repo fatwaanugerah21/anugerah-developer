@@ -3,7 +3,7 @@ import "./flow.min.css";
 
 const Flow = ({ className }) => {
   return (
-    <div className={className + " flow-page"}>
+    <div className={className + " flow-page"} id="flow">
       <div className="page-name-position">
         <div className="page-name white-text">How We Solve Your Problem</div>
       </div>
@@ -15,7 +15,7 @@ const Flow = ({ className }) => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
             obcaecati nam harum incidunt fugiat, ex praesentium saepe ullam
             similique ipsa temporibus soluta eveniet, in nulla ipsam facere
-            possimus ducimus dicta esse deleniti, 
+            possimus ducimus dicta esse deleniti,
           </p>
         </div>
         <div className="card">
