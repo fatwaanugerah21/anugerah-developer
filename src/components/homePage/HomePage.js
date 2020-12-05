@@ -41,7 +41,7 @@ const HomePage = () => {
       <Navbar
         pageYOffset={yOffset}
         className="page"
-        showMenu={() => setShowMenu(true)}
+        showMenu={() => setShowMenu(!showMenu)}
       />
       <LandingPage className="page" pageYOffset={yOffset} />
       <AboutUs className="page" />
