@@ -5,8 +5,8 @@ import LandingPage from "./landingPage/LandingPage";
 import Navbar from "./navbar/Navbar";
 import Plans from "./plans/Plans";
 import SocialMedia from "../socialMedia/SocialMedia";
-import OwnModal from "../tools/modal/ownModal";
 import Menu from "../tools/menu/Menu";
+import Collaborate from "./collaborate/Collaborate";
 
 const HomePage = () => {
   const [yOffset, setYOffset] = useState(0);
@@ -37,11 +37,13 @@ const HomePage = () => {
           setShowMenu(false);
         }}
       />
-      <OwnModal onClick={() => setShowModal(false)} show={showModal} />
+      {Collaborate}
+
       <Navbar
         pageYOffset={yOffset}
         className="page"
         showMenu={() => setShowMenu(!showMenu)}
+        showModal={() => setShowModal(!showModal)}
       />
       <LandingPage className="page" pageYOffset={yOffset} />
       <AboutUs className="page" />

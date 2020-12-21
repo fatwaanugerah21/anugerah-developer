@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = ({ pageYOffset, showMenu }) => {
   const withBackground = pageYOffset >= 200 ? " dark-background stick-top" : "";
+
   return (
     <div className={"navbar " + withBackground}>
       <div className="navbar-component row">

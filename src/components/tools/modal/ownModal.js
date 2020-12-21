@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Collaborate from "../../homePage/collaborate/Collaborate";
 import "./modal.min.css";
 
 const OwnModal = (props) => {

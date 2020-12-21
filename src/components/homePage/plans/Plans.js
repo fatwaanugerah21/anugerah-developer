@@ -1,33 +1,32 @@
 import React from "react";
 import "./plans.min.css";
-import image from "./backgroundcopy.jpg";
 
 function Plans({ className }) {
   const items = [
     {
-      title: "Mantul",
+      title: "Reach the sky",
       text:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum,repudiandae blanditiis. Quasi illo nam consectetur nisi libero,voluptatum aliquam, modi quis accusamus vero perferendis labore",
-      image: "./background.jpg",
+        "Give your business a fast and agile website so your customer will impressed with your services, and he will comeback to you so you can gain more money",
+      image: "/images/website-plan.jpg",
     },
     {
-      title: "Assiap",
+      title: "Stay with your customer every time",
       text:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum,repudiandae blanditiis. Quasi illo nam consectetur nisi libero,voluptatum aliquam, modi quis accusamus vero perferendis labore",
-      image: "./background.jpg",
+        "Get your store installed in their phone, so it will be easier to turn them back to you because every teenager and old people and even a children using a phone in this era",
+      image: "/images/phone-plans.jpg",
     },
     {
-      title: "Jancuy",
+      title: "The winner takes all",
       text:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum,repudiandae blanditiis. Quasi illo nam consectetur nisi libero,voluptatum aliquam, modi quis accusamus vero perferendis labore",
-      image: "./background.jpg",
+        "We help you to get a powerfull website and mobile apps, you will get very great impression and your business will spread very fast, because your customer is the king so give them the best services",
+      image: "/images/winner-takes-all.jpg",
     },
   ];
 
   const showedItems = items.map((item) => {
     return (
       <div className="item">
-        <img src={image} alt="contentImage" className="image" />
+        <img src={item.image} alt="contentImage" className="image" />
         <div className="content">
           <h1>{item.title}</h1>
           <p>{item.text}</p>
