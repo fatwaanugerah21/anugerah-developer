@@ -6,9 +6,11 @@ const AboutUs = ({ className }) => {
     <div className={className}>
       <div className="about-us" id="about-us">
         <div className="page-name-position">
-          <div className="page-name">Tentang Kami</div>
+          <div data-aos="fade-right" className="page-name">
+            Tentang Kami
+          </div>
         </div>
-        <div className="content">
+        <div className="content" data-aos="zoom-out">
           <h1 className="title marginated">Reach All Over The World With Us</h1>
           <p className="text marginated">
             In this technology era, to reach world market is so easy, you can

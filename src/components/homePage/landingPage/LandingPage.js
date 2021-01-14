@@ -2,7 +2,7 @@ import React from "react";
 import "./LandingPage.min.css";
 
 function LandingPage({ className, pageYOffset }) {
-  const show = pageYOffset >= 700 ? "hide" : "";
+  const show = pageYOffset >= 700 ? "hide" : "show";
 
   return (
     <div className={className} id="home">
@@ -11,7 +11,7 @@ function LandingPage({ className, pageYOffset }) {
           <div className="background absolute-center full-size" />
           <div className="cut-corner-top" />
           <div className={"title " + show}>
-            <h1>Anugerah Developer</h1>
+            <h1 data-aos="fade-down">Anugerah Developer</h1>
           </div>
 
           <p className={"quote " + show}>

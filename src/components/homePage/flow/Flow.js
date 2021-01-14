@@ -5,10 +5,12 @@ const Flow = ({ className }) => {
   return (
     <div className={className + " flow-page"} id="flow">
       <div className="page-name-position">
-        <div className="page-name white-text">How We Do It</div>
+        <div data-aos="fade-right" className="page-name white-text">
+          How We Do It
+        </div>
       </div>
       <div className="items container">
-        <div className="card">
+        <div data-aos="fade-up" data-aos-duration="1000" className="card">
           <img src="/images/analysis.svg" alt="analyze" />
           <h3>Research</h3>
           <p>
@@ -17,7 +19,7 @@ const Flow = ({ className }) => {
             user your services
           </p>
         </div>
-        <div className="card">
+        <div data-aos="fade-up" data-aos-duration="1500" className="card">
           <img src="/images/interaction.svg" alt="Get Deal" />
           <h3>Get the Deal</h3>
           <p>
@@ -25,7 +27,7 @@ const Flow = ({ className }) => {
             our plan to build your website
           </p>
         </div>
-        <div className="card">
+        <div data-aos="fade-up" data-aos-duration="2000" className="card">
           <img src="/images/delivered.svg" alt="Deliver" />
           <h3>Deliver The Website</h3>
           <p>

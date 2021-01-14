@@ -23,11 +23,19 @@ function Plans({ className }) {
     },
   ];
 
-  const showedItems = items.map((item) => {
+  const showedItems = items.map((item, index) => {
     return (
       <div className="item">
-        <img src={item.image} alt="contentImage" className="image" />
-        <div className="content">
+        <img
+          src={item.image}
+          data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
+          alt="contentImage"
+          className="image"
+        />
+        <div
+          className="content"
+          data-aos={index % 2 === 1 ? "fade-right" : "fade-left"}
+        >
           <h1>{item.title}</h1>
           <p>{item.text}</p>
           <button>Order Now</button>
@@ -39,7 +47,9 @@ function Plans({ className }) {
   return (
     <div className={className} id="plans">
       <div className="page-name-position">
-        <div className="page-name white-text">Our Plans</div>
+        <div data-aos="fade-right" className="page-name white-text">
+          Our Plans
+        </div>
       </div>
       <div className="plans">{showedItems}</div>
     </div>
