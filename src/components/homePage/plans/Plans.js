@@ -1,24 +1,22 @@
 import React from "react";
+import { orderLink } from "../../constants";
 import "./plans.min.css";
 
 function Plans({ className }) {
   const items = [
     {
-      title: "Reach the sky",
-      text:
-        "Give your business a fast and agile website so your customer will impressed with your services, and he will comeback to you so you can gain more money",
+      title: "Website dan Design",
+      text: "Anda hanya perlu mengontak kami, kami membuat design untuk website anda dan kami akan mengubahnya menjadi website yang berkualitas International yang siap anda gunakan",
       image: "/images/website-plan.jpg",
     },
     {
-      title: "Stay with your customer every time",
-      text:
-        "Get your store installed in their phone, so it will be easier to turn them back to you because every teenager and old people and even a children using a phone in this era",
+      title: "Website Standar International",
+      text: "Inti dari sebuah website adalah kemampuannya untuk menarik konsumer agar lebih dekat dengan anda dimanapun mereka berada jadilah pionir sebagai bisnis yang memberikan pelayanan terbaik kepada konsumer dengan website yang berkualitas terbaik",
       image: "/images/phone-plans.jpg",
     },
     {
-      title: "The winner takes all",
-      text:
-        "We help you to get a powerfull website and mobile apps, you will get very great impression and your business will spread very fast, because your customer is the king so give them the best services",
+      title: "Research dan Implementasi",
+      text: "Company website terbaik adalah website yang bisa menarik pelanggan menghabiskan waktu selama mungkin, untuk itu diperlukan research dan implementasi secara mendalam dalam pembuatannya, kami adalah partner yang pas untuk mendapatkan website terbaik untuk bisnis anda",
       image: "/images/winner-takes-all.jpg",
     },
   ];
@@ -38,7 +36,9 @@ function Plans({ className }) {
         >
           <h1>{item.title}</h1>
           <p>{item.text}</p>
-          <button>Order Now</button>
+          <button>
+            <a href={orderLink}>Pesan Sekarang</a>
+          </button>
         </div>
       </div>
     );

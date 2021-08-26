@@ -1,5 +1,6 @@
 import React from "react";
-import "./about-us.min.css";
+import { orderLink } from "../../constants";
+import "./about-us.css";
 
 const AboutUs = ({ className }) => {
   return (
@@ -11,17 +12,30 @@ const AboutUs = ({ className }) => {
           </div>
         </div>
         <div className="content" data-aos="zoom-out">
-          <h1 className="title marginated">Reach All Over The World With Us</h1>
+          <h1 className="title marginated">
+            Mari Berkolaborasi Untuk Hasil Yang Maksimal
+          </h1>
           <p className="text marginated">
-            In this technology era, to reach world market is so easy, you can
-            use website for your business and it will spread as hell choose us
-            and we will give you the most suit website for your business Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Eum incidunt quod
-            nam sint facilis, provident, tempora et voluptate debitis
-            praesentium ullam sequi impedit quisquam nostrum, minus ipsum quae
-            recusandae? Hic.
+            Dimasa yang serba instan dan penuh tantangan seperti saat ini, untuk
+            survive dalam dunia bisnis adalah harus menjangkau consumer sebanyak
+            mungkin serta memberikan konsumer kemudahan dalam untuk berinteraksi
+            dengan kita. Salah satu yang sangat membantu untuk hal tersebut
+            adalah memiliki produk digital utamanya website, namun membuat
+            website yang sesuai pasar tidaklah mudah, oleh karena itu kami hadir
+            untuk membantu anda menyelesaikan masalah produk digital anda dengan
+            harga yang sangat terjangkau tetapi kualitas yang bertaraf
+            international
           </p>
-          <p className="hashtag marginated">#GrowWithTech</p>
+          <button>
+            <a target="_blank" rel="noreferrer" href={orderLink}>
+              Pesan Sekarang
+            </a>
+          </button>
+          <p style={{ textAlign: "center" }} className="hashtag marginated">
+            <strong>#KemudahanTeknologi</strong>
+            <br />
+            <strong>#KolaborasiUntukHasilYangMaksimal</strong>
+          </p>
         </div>
       </div>
     </div>

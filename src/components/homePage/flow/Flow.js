@@ -1,12 +1,13 @@
 import React from "react";
-import "./flow.min.css";
+import { orderLink } from "../../constants";
+import "./flow.css";
 
 const Flow = ({ className }) => {
   return (
     <div className={className + " flow-page"} id="flow">
       <div className="page-name-position">
         <div data-aos="fade-right" className="page-name white-text">
-          How We Do It
+          Cara Kami Menyelesaikan Masalah
         </div>
       </div>
       <div className="items container">
@@ -14,28 +15,34 @@ const Flow = ({ className }) => {
           <img src="/images/analysis.svg" alt="analyze" />
           <h3>Research</h3>
           <p>
-            We do a complex research to give the website that suitable for your
-            business because it's very important so your customer will want to
-            user your services
+            Langkah awal adalah mengetahui apa yang dibutuhkan perusahaan anda,
+            dengan begitu kita bisa memberikan solusi terbaik untuk konsumer
+            anda
           </p>
         </div>
         <div data-aos="fade-up" data-aos-duration="1500" className="card">
           <img src="/images/interaction.svg" alt="Get Deal" />
-          <h3>Get the Deal</h3>
+          <h3>Merancang Solusi</h3>
           <p>
-            After we do research we ask you if you want to change something on
-            our plan to build your website
+            Kami akan merancang solusi yang dapat menyelesaikan masalah digital
+            perusahaan anda dan tentu saja memberikan transparansi dalam
+            perancangan tersebut
           </p>
         </div>
         <div data-aos="fade-up" data-aos-duration="2000" className="card">
           <img src="/images/delivered.svg" alt="Deliver" />
-          <h3>Deliver The Website</h3>
+          <h3>Launching Produk</h3>
           <p>
-            We hosting it with your business name as domain, and your business
-            ready to growth extremely fast and gain more money
+            Produk siap melakukan tugasnya yaitu mendapatkan hati konsumer
+            dengan cara memberikan pelayanan terbaik kepada mereka
           </p>
         </div>
       </div>
+      <button>
+        <a target="_blank" rel="noreferrer" href={orderLink}>
+          Pesan Sekarang
+        </a>
+      </button>
     </div>
   );
 };

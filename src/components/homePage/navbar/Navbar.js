@@ -3,6 +3,7 @@ import { burgerMenu } from "./burger-menu";
 import "./navbar.min.css";
 import { Logo } from "../../../logo";
 import { Link } from "react-router-dom";
+import { orderLink } from "../../constants";
 
 const Navbar = ({ pageYOffset, showMenu }) => {
   const withBackground = pageYOffset >= 200 ? " dark-background stick-top" : "";
@@ -17,9 +18,16 @@ const Navbar = ({ pageYOffset, showMenu }) => {
         </div>
         <a href="#home">{Logo(false)}</a>
         <ul className="nav-container collapse-on-mobile">
-          <li className="nav-item">COLLABORATE</li>
-          <li className="nav-item">CALL</li>
-          <li className="nav-item">DIRECTION</li>
+          <li className="nav-item">
+            <a target="_blank" rel="noreferrer" href={orderLink}>
+              COLLABORATE
+            </a>
+          </li>
+          <li className="nav-item">
+            <a target="_blank" rel="noreferrer" href={orderLink}>
+              CALL
+            </a>
+          </li>
         </ul>
       </div>
     </div>

@@ -1,7 +1,8 @@
 import React from "react";
-import "./social-media.min.css";
-import { facebookIcon, githubIcon, instagramIcon } from "./icons";
+import "./social-media.css";
+import { facebookIcon, githubIcon, instagramIcon, whatsappIcon } from "./icons";
 import { Logo } from "../../logo";
+import { orderLink } from "../constants";
 
 const SocialMedia = ({ pageYOffset, bodyHeight }) => {
   const withBackground = pageYOffset >= 200 ? " dark-background" : "";
@@ -21,6 +22,14 @@ const SocialMedia = ({ pageYOffset, bodyHeight }) => {
         </div>
       </div>
       <ul className={"social-media-list " + withBackground}>
+        <li
+          style={{ marginRight: "10px", transform: "translate-y:5px" }}
+          className="social-media-item facebook"
+        >
+          <a target="_blank" rel="noreferrer noopener" href={orderLink}>
+            {whatsappIcon()}
+          </a>
+        </li>
         <li className="social-media-item facebook">
           <a
             target="_blank"

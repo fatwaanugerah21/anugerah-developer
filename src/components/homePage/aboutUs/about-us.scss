@@ -6,7 +6,6 @@
   position: relative;
   color: white;
 
-
   .content {
     padding: 50px 20px 0;
     width: 100%;
@@ -20,7 +19,7 @@
     color: black;
 
     .marginated {
-      margin: 0 1vw 50px;
+      margin: 0 0.5vw 50px;
     }
 
     .title {
@@ -29,6 +28,14 @@
     .text {
       line-height: 24px;
     }
+  }
+  button {
+    padding: 15px 30px;
+    background-color: rgb(22, 24, 175);
+    color: white;
+    margin: 10px 0;
+    border-radius: 2px;
+    border: none;
   }
 }
 
